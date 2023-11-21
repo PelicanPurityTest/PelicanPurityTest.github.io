@@ -17,4 +17,14 @@
   <label for="ssc"> Caught breaking a student standard?</label><br><br>
   <input type="submit" value="Submit">
 </body>
+<script>
+var eventListener = window.addEventListener ? "addEventListener" : "attachEvent";
+var clickEvent = eventListener == "attachEvent" ? "onclick" : "click";
+
+document.getElementById('buttonId')[eventListener](clickEvent, function(){
+  document.body.style.display = "none";
+});
+<script>
+
+<button id="buttonId">click me</button
 </html>
